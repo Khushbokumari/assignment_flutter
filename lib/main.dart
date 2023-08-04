@@ -1,3 +1,4 @@
+import 'package:assignment/Screens/list.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -21,7 +22,9 @@ class MyApp extends StatelessWidget {
       home: Welcome(),
       routes: {
         'phone': (context) => MyPhone(),
-        'verify': (context) => MyVerify()
+        'verify': (context) => MyVerify(),
+        'list': (context) => ListPage(),
+
       },
     );
   }

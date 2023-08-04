@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 import 'Screens/home.dart';
+import 'Screens/listView.dart';
 import 'Screens/login.dart';
 import 'Screens/verify.dart';
 
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
       routes: {
         'phone': (context) => MyPhone(),
         'verify': (context) => MyVerify(),
-        'list': (context) => ListPage(),
+        'list': (context) => ListPages(),
+        // 'list': (context) => ListPage(),
 
       },
     );

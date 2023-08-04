@@ -1,3 +1,4 @@
+import 'package:assignment/Screens/listView.dart';
 import 'package:assignment/Screens/login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -119,7 +120,7 @@ class _MyVerifyState extends State<MyVerify> {
                        // Sign the user in (or link) with the credential
                        await auth.signInWithCredential(credential);
                        Navigator.of(context).push(
-                           MaterialPageRoute(builder: (context) => ListPage()),
+                           MaterialPageRoute(builder: (context) => ListPages()),
                          );
                      }
                      catch(e){
